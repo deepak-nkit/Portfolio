@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+  background-color: lightblue;
+  margin-top: 8px;
+}
+
+.ddt {
+  border: 2px solid blanchedalmond;
+  /* width: 60em; */
+  /* display: flex; */
+  /* flex-direction: column; */
+}
+
+nav a {
+  color: black;
+  margin-top: 100px;
+  height: max-content;
+  text-decoration: none;
+  background-color: green;
+  padding: 400px 10px;
+}
