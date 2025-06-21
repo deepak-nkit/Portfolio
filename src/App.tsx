@@ -1,12 +1,22 @@
 import Navbar from "./components/navbar";
 import Projects from "./components/project";
+import About from "./components/about";
+import Resume from "./components/resume";
+import Contact from "./components/contact";
+import Footer from "./components/footer";
+import SocialLinks from "./components/socialLinks";
 
 function App() {
   return (
-    <div className="flex bg-gray-900 text-white min-h-screen font-sans">
+    <div className="flex bg-gray-800 text-white min-h-screen font-sans">
       <Navbar />
-      <main className="bg-gray-800">
+      <SocialLinks />
+      <main className="grid bg-gray-800 gap-16">
+        <About />
         <Projects />
+        <Resume />
+        <Contact />
+        <Footer />
       </main>
     </div>
   );

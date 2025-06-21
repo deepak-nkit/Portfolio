@@ -25,7 +25,7 @@ const Navbar: React.FC = () => {
         </p>
       </div>
       <nav className="flex flex-col gap-6 text-sm text-gray-400 mt-[5vw]">
-        <a href="/about" className="hover:text-teal-400 transition">
+        <a href="#about" className="hover:text-teal-400 transition">
           ABOUT
         </a>
 
@@ -33,8 +33,11 @@ const Navbar: React.FC = () => {
           PROJECTS
         </a>
 
-        <a href="/contact" className="hover:text-teal-400 transition">
-          {" "}
+        <a href="#resume" className="hover:text-teal-400 transition">
+          RESUME
+        </a>
+
+        <a href="#contact" className="hover:text-teal-400 transition">
           Contact
         </a>
       </nav>
