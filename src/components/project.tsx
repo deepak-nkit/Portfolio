@@ -11,6 +11,7 @@ type Project = {
   description: string;
   link: string;
   image: string;
+  tech: string[];
 };
 
 const projects: Project[] = [
@@ -20,6 +21,7 @@ const projects: Project[] = [
       "A full-stack social app that lets users connect based on location and interests. Built with SvelteKit, FastAPI, and SQLite. Features real-time chat, location sharing via Leaflet.js, and secure authentication.",
     link: "https://friends.nkit.dev/",
     image: friend,
+    tech: ["SvelteKit", "FastAPI", "leaflet.js", "Ts"],
   },
   {
     title: "Currency Converter",
@@ -27,6 +29,7 @@ const projects: Project[] = [
       "A simple web tool using HTML, CSS, and JavaScript to convert currencies via real-time API. Includes responsive design, currency dropdowns, and instant calculations.",
     link: "https://github.com/deepak-nkit/Currency-Converter",
     image: currency,
+    tech: ["HTML", "CSS", "JavaScript", "API"],
   },
   {
     title: "ToDo List",
@@ -34,6 +37,7 @@ const projects: Project[] = [
       "A task management app built with Flask and SQLite. Supports adding, updating, and deleting todos with clean RESTful routes and server-side rendering via Jinja templates.",
     link: "https://github.com/deepak-nkit/Todo",
     image: todo,
+    tech: ["HTML", "CSS", "Python", "Flask"],
   },
   {
     title: "Rock Paper Scissor Game",
@@ -41,14 +45,15 @@ const projects: Project[] = [
       "A browser-based game using vanilla JavaScript. Includes move logic, score tracking, basic animations, and a responsive UI for all screen sizes.",
     link: "https://github.com/deepak-nkit/RockPaperScissor-game",
     image: rock,
+    tech: ["HTML", "CSS", "JavaScript"],
   },
 ];
 
 const Projects: React.FC = () => {
   return (
-    <section className="w-[59vw] ml-[40vw] overflow-hidden" id="projects">
-      <div className="p-[4vw] max-w-[45vw] font-mono ">
-        <h2 className="text-2xl text-teal-400 font-bold mb-8">PROJECTS</h2>
+    <section className=" w-[59vw] ml-[40vw] overflow-hidden" id="projects">
+      <div className="pl-[3vw]  max-w-[41vw] font-inter">
+        <h2 className="text-2xl text-teal-500 font-bold mb-8">PROJECTS</h2>
         <div className="grid gap-10">
           {projects.map((projects, index) => (
             <a
@@ -56,7 +61,7 @@ const Projects: React.FC = () => {
               href={projects.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="group flex gap-6 p-5 max-w-fit rounded-md shadow-xl  hover:border-y-indigo-900 hover:bg-gray-900 duration-300 cursor-pointer"
+              className="group flex gap-6 p-3 max-w-fit rounded-md shadow-xl hover:bg-gray-900 duration-300 cursor-pointer"
             >
               <img
                 src={projects.image}
@@ -74,6 +79,16 @@ const Projects: React.FC = () => {
                 <p className="text-gray-400 w-[27vw] ">
                   {projects.description}
                 </p>
+                <div className="flex flex-wrap gap-2 mt-3 px-4">
+                  {projects.tech.map((tech, idx) => (
+                    <span
+                      key={idx}
+                      className="text-xs font-iter text-teal-300 rounded-full bg-teal-800 border border-teal-700 px-4 py-2"
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </div>
               </div>
             </a>
           ))}
@@ -82,7 +97,7 @@ const Projects: React.FC = () => {
         <div className="mt-14">
           <div className=" w-auto group inline-block relative">
             <a
-              href="/projects"
+              href="/allprojects"
               className="inline-flex items-center gap-2 px-2 py-2 text-white hover:border-l-2 border-teal-300 hover:text-teal-300 transition"
             >
               <span className="font-semibold text-lg">View All Projects</span>

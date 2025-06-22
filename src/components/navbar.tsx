@@ -24,8 +24,29 @@ const Navbar: React.FC = () => {
           backend.
         </p>
       </div>
-      <nav className="flex flex-col gap-6 text-sm text-gray-400 mt-[5vw]">
-        <a href="#about" className="hover:text-teal-400 transition">
+      <nav className="flex flex-col gap-5 text-sm text-gray-400 mt-[5vw]">
+        {[
+          { href: "#about", label: "ABOUT" },
+          { href: "#projects", label: "PROJECTS" },
+          { href: "#resume", label: "RESUME" },
+          { href: "#contact", label: "CONTACT" },
+        ].map((item, index) => (
+          <a
+            key={index}
+            href={item.href}
+            className="group flex items-center gap-3 transition-all duration-300"
+          >
+            <span className="text-gray-500 group-hover:text-teal-400 transition duration-300 transform group-hover:translate-x-2">
+              ──
+            </span>
+            {/* Link text */}
+            <span className="text-gray-400 group-hover:text-teal-400 transition duration-300 transform group-hover:translate-x-2">
+              {item.label}
+            </span>
+          </a>
+        ))}
+
+        {/* <a href="#about" className="hover:text-teal-400 transition">
           ABOUT
         </a>
 
@@ -39,7 +60,7 @@ const Navbar: React.FC = () => {
 
         <a href="#contact" className="hover:text-teal-400 transition">
           Contact
-        </a>
+        </a> */}
       </nav>
     </aside>
   );

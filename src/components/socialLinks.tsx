@@ -1,9 +1,14 @@
 import React from "react";
-import { FaGithub, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
 
 const SocialLinks: React.FC = () => {
   return (
     <div className="fixed bottom-0 left-[6vw] z-50 hidden md:flex flex-col items-center space-y-5">
+      <a href="mailto:ds954642@gmail.com" target="_blank" rel="noreferrer">
+        <MdEmail className="text-gray-400 hover:text-teal-400 transition-colors" />
+      </a>
+
       <a
         href="https://github.com/deepak-nkit/"
         target="_blank"
@@ -27,7 +32,7 @@ const SocialLinks: React.FC = () => {
       >
         <FaLinkedin className="text-gray-400 hover:text-teal-400 transition-colors" />
       </a>
-      <div className="w-[2px] h-24 bg-gray-400"></div>
+      <div className="w-[2px] h-20 bg-gray-400"></div>
     </div>
   );
 };

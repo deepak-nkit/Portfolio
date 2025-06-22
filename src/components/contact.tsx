@@ -2,9 +2,9 @@ import React from "react";
 
 const Contact: React.FC = () => {
   return (
-    <section className="mt-2 w-[59vw] ml-[40vw] font-mono" id="contact">
-      <div className="flex flex-col justify-center  w-[45vw] p-[4vw]">
-        <h2 className="text-2xl font-bold text-teal-400 mb-5">Get In Touch </h2>
+    <section className="w-[59vw] ml-[40vw] font-mono" id="contact">
+      <div className="flex flex-col justify-center font-inter w-[41vw] pl-[3vw]">
+        <h2 className="text-2xl font-bold text-teal-500 mb-5">Get In Touch </h2>
         <p className="text-gray-400 mb-6 max-w-full">
           Whether you're looking for a developer, want to collabrate on
           something exciting, or just want to say{" "}
