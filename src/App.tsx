@@ -11,7 +11,7 @@ import AllProjects from "./pages/AllProjects";
 function App() {
   return (
     <BrowserRouter>
-      <div className=" flex bg-gray-800 text-white min-h-screen font-sans">
+      <div className=" flex bg-gray-800 flex-col sm:flex-row text-white min-h-screen font-sans">
         <Routes>
           <Route
             path="/"
@@ -19,7 +19,7 @@ function App() {
               <>
                 <Navbar />
                 <SocialLinks />
-                <main className="grid bg-gray-800 gap-16">
+                <main className="min-h-screen grid bg-gray-800 gap-16">
                   <About />
                   <Projects />
                   <Resume />

@@ -4,9 +4,9 @@ import { MdEmail } from "react-icons/md";
 
 const SocialLinks: React.FC = () => {
   return (
-    <div className="fixed bottom-0 left-[6vw] z-50 hidden md:flex flex-col items-center space-y-5">
+    <div className="sm:fixed sm:bottom-0 sm:left-[6vw] sm:z-50 flex flex-row sm:flex-col gap-6 sm:gap-0 sm:items-center sm:space-y-5 sm:py-0 sm:m-0 px-7 py-4 m-4">
       <a href="mailto:ds954642@gmail.com" target="_blank" rel="noreferrer">
-        <MdEmail className="text-gray-400 hover:text-teal-400 transition-colors" />
+        <MdEmail className="text-2xl sm:text-xl text-gray-400 sm:hover:text-teal-400 sm:transition-colors" />
       </a>
 
       <a
@@ -14,7 +14,7 @@ const SocialLinks: React.FC = () => {
         target="_blank"
         rel="noreferrer"
       >
-        <FaGithub className="text-gray-400 hover:text-teal-400 transition-colors" />
+        <FaGithub className="text-2xl sm:text-xl text-gray-400 sm:hover:text-teal-400 sm:transition-colors" />
       </a>
 
       <a
@@ -22,7 +22,7 @@ const SocialLinks: React.FC = () => {
         target="_blank"
         rel="noreferrer"
       >
-        <FaInstagram className="text-gray-400 hover:text-teal-400 transition-colors" />
+        <FaInstagram className="text-2xl sm:text-xl text-gray-400 sm:hover:text-teal-400 sm:transition-colors" />
       </a>
 
       <a
@@ -30,9 +30,9 @@ const SocialLinks: React.FC = () => {
         target="_blank"
         rel="noreferrer"
       >
-        <FaLinkedin className="text-gray-400 hover:text-teal-400 transition-colors" />
+        <FaLinkedin className="text-2xl sm:text-xl text-gray-400 sm:hover:text-teal-400 sm:transition-colors" />
       </a>
-      <div className="w-[2px] h-20 bg-gray-400"></div>
+      <div className="hidden  sm:block sm:w-[2px] sm:h-20 sm:bg-gray-400"></div>
     </div>
   );
 };

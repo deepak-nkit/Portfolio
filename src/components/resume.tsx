@@ -8,12 +8,13 @@ const Resume: React.FC = () => {
 
   return (
     <div
-      className=" flex items-center ml-[40vw]  group relative w-fit "
+      className="flex items-start sm:items-center sm:ml-[40vw] group relative w-fit set sm:p-0 "
       id="resume"
     >
       <button
         onClick={handleResume}
-        className="inline-flex font-inter shadow-xl items-center gap-3 max-w-fit px-2 py-2 text-gray-100 text-xl font-bold hover:border-l-2 border-teal-300 hover:text-teal-400 transition p-2 cursor-pointer"
+        className="inline-flex font-inter shadow-xl items-center gap-3 max-w-fit px-2 py-2 text-teal-300 sm:text-gray-100
+        text-xl font-bold hover:border-l-2 sm:border-teal-300 sm:hover:text-teal-400 sm:transition sm:p-2 sm:cursor-pointer"
       >
         <span className="flex gap-2">View Resume</span>
         <HiOutlineArrowRight className="text-lg transition-transform group-hover:translate-x-3" />

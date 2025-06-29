@@ -53,7 +53,7 @@ const AllProjects: React.FC = () => {
   return (
     <section
       id="allprojects"
-      className="border w-full bg-gray-900 min-h-screen px-9 py-20"
+      className="set  w-full bg-gray-900 min-h-screen px-9 py-20 "
     >
       <div className="mb-12 ">
         <a
@@ -62,16 +62,16 @@ const AllProjects: React.FC = () => {
         >
           ← Deepak Saini
         </a>
-        <h1 className="ml-8 text-4xl sm:text-5xl font-bold text-white mt-2">
+        <h1 className="ml-8 text-2xl sm:text-4xl font-bold text-white mt-3">
           All Projects
         </h1>
       </div>
 
-      <div className="overflow-x-auto w-[80vw] ml-[10vw] max-w-none">
+      <div className="overflow-x-auto w-fit sm:p-3 sm:w-[80vw] sm:ml-[10vw] max-w-none ">
         <table className="w-full text-left text-sm sm:text-base">
           <thead>
             <tr className="text-gray-400 border-b border-gray-700">
-              <th className="py-3 pr-6">Year</th>
+              <th className="hidden sm:block py-3 pr-6">Year</th>
               <th className="py-3 pr-6">Project</th>
               <th className="py-3 pr-6">Built with</th>
               <th className="py-3 pr-6">Link</th>
@@ -83,7 +83,7 @@ const AllProjects: React.FC = () => {
                 key={index}
                 className="border-b border-gray-800 hover:bg-gray-800 transition"
               >
-                <td className="py-4 pr-6">{project.year}</td>
+                <td className="hidden sm:block py-4 pr-6">{project.year}</td>
                 <td className="py-4 pr-6 font-semibold text-white">
                   {project.name}
                 </td>
@@ -104,7 +104,7 @@ const AllProjects: React.FC = () => {
                     href={project.link.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="hover:text-teal-400"
+                    className="text-red-400 underline sm:no-underline sm:text-gray-300 sm:hover:text-teal-400"
                   >
                     {project.link.text}
                   </a>

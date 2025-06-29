@@ -2,10 +2,16 @@ import React from "react";
 
 const About: React.FC = () => {
   return (
-    <section className="mt-20 w-[59vw] ml-[40vw] overflow-hidden" id="about">
-      <div className="font-inter pl-[3vw] text-gray-400 w-[41vw]  ">
-        <h2 className="text-2xl text-teal-500 font-bold mb-8">ABOUT</h2>
+    <section
+      className="mt-10 w-full sm:w-[59vw] sm:ml-[40vw] set overflow-hidden "
+      id="about"
+    >
+      <div className="font-inter text-gray-400 w-full max-w-[700px]">
+        <h2 className="text-xl sm:text-2xl text-teal-500 font-bold mb-8">
+          ABOUT
+        </h2>
 
+        {/* <section className="mt-20 w-full sm:w-[59vw] ml-[40vw] overflow-hidden" id="about"> */}
         <p className="mt-7">
           I'm a{" "}
           <span className="text-white font-semibold">

@@ -51,39 +51,46 @@ const projects: Project[] = [
 
 const Projects: React.FC = () => {
   return (
-    <section className=" w-[59vw] ml-[40vw] overflow-hidden" id="projects">
-      <div className="pl-[3vw]  max-w-[41vw] font-inter">
-        <h2 className="text-2xl text-teal-500 font-bold mb-8">PROJECTS</h2>
-        <div className="grid gap-10">
+    <section
+      className="mt-5 w-full sm:w-[59vw] sm:ml-[40vw] pr-4 overflow-hidden"
+      id="projects"
+    >
+      <div className="pl-[3vw] w-full sm:max-w-[41vw] md:max-w-fit font-inter">
+        <h2 className="text-xl sm:text-2xl text-teal-500 font-bold mb-8">
+          PROJECTS
+        </h2>
+        <div className="flex  flex-col gap-10">
           {projects.map((projects, index) => (
             <a
               key={index}
               href={projects.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="group flex gap-6 p-3 max-w-fit rounded-md shadow-xl hover:bg-gray-900 duration-300 cursor-pointer"
+              className="group flex flex-col items-start sm:flex-row gap-6 p-3 max-w-fit rounded-md shadow-xl hover:bg-gray-900 duration-300 cursor-pointer"
             >
-              <img
-                src={projects.image}
-                alt={projects.title}
-                className=" w-36 h-36 object-cover rounded-md border-2 border-transparent transition-all duration-300  group-hover:border-gray-400"
-              />
+              <div className="w-full flex justify-center sm:justify-start md:justify-center">
+                <img
+                  src={projects.image}
+                  alt={projects.title}
+                  className=" sm:w-36 sm:h-36 w-4/5 h-4/6 object-cover rounded-md border-2 border-transparent transition-all duration-300  group-hover:border-gray-400"
+                />
+              </div>
 
-              <div className=" flex flex-col justify-center items-start">
-                <h3 className="mb-6 flex items-start text-xl font-semibold text-white max-w-fit  group-hover:text-teal-400 ">
+              <div className="flex flex-col justify-center items-start p-2">
+                <h3 className="mb-6 flex items-start text-xl font-semibold text-white max-w-fit sm:group-hover:text-teal-400 ">
                   {projects.title}
-                  <span className="transform transition-all duration-300 group-hover:translate-x-1">
+                  <span className="hidden sm:block transform transition-all duration-300 group-hover:translate-x-1">
                     <TfiArrowTopRight className="mt-1 ml-2" />
                   </span>
                 </h3>
-                <p className="text-gray-400 w-[27vw] ">
+                <p className="text-gray-400 text-sm sm:text-md w-full sm:w-[27vw] ">
                   {projects.description}
                 </p>
-                <div className="flex flex-wrap gap-2 mt-3 px-4">
+                <div className="flex flex-wrap gap-2 mt-2 sm:mt-3 md:mt-4 px-4">
                   {projects.tech.map((tech, idx) => (
                     <span
                       key={idx}
-                      className="text-xs font-iter text-teal-300 rounded-full bg-teal-800 border border-teal-700 px-4 py-2"
+                      className="text-xs font-iter text-teal-300 rounded-full bg-teal-800 border border-teal-700 px-2 sm:px-4 py-1 sm:py-2"
                     >
                       {tech}
                     </span>
@@ -94,8 +101,8 @@ const Projects: React.FC = () => {
           ))}
         </div>
 
-        <div className="mt-14">
-          <div className=" w-auto group inline-block relative">
+        <div className="mt-10 sm:mt-14">
+          <div className="w-auto group inline-block relative">
             <a
               href="/allprojects"
               className="inline-flex items-center gap-2 px-2 py-2 text-white hover:border-l-2 border-teal-300 hover:text-teal-300 transition"
