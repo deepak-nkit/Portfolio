@@ -1,7 +1,6 @@
 import React from "react";
 import { TfiArrowTopRight } from "react-icons/tfi";
 import { HiOutlineArrowRight } from "react-icons/hi";
-import currency from "../assets/currency.png";
 import friend from "../assets/friend.png";
 import todo from "../assets/todo.png";
 import pass from "../assets/pass.png";
