@@ -33,11 +33,10 @@ const Navbar: React.FC = () => {
           <a href="/">Deepak Saini</a>
         </h1>
         <p className="text-base sm:text-lg text-teal-400 mt-10">
-          Full-Stack Developer
+          Software Developer 
         </p>
         <p className="text-sm sm:text-md sm:text-gray-400 mt-8 sm:mt-5 w-full leading-relaxed">
-          I create responsive, full-featured web experiences from frontend to
-          backend.
+          Passionate about building functional and user-focused software using modern development tools.
         </p>
       </div>
 

@@ -23,14 +23,25 @@ const projects: Project[] = [
     image: friend,
     tech: ["SvelteKit", "FastAPI", "leaflet.js", "Ts"],
   },
+
   {
-    title: "Currency Converter",
+    title: "Secure Password Manager",
     description:
-      "A simple web tool using HTML, CSS, and JavaScript to convert currencies via real-time API. Includes responsive design, currency dropdowns, and instant calculations.",
-    link: "https://github.com/deepak-nkit/Currency-Converter",
+      "Built a command-line password manager to securely store and manage user credentials using a master password.Implemented AES encryption and key derivation to ensure strong data protection.",
+    link: "https://github.com/Deepaksaini00/Password-Manager",
     image: currency,
-    tech: ["HTML", "CSS", "JavaScript", "API"],
+    tech: ["Python", "SQLite", "AES Encryption", "PBKDF2"],
   },
+
+  {
+    title: "Deep Launcher(Android)",
+    description:
+      "Built a simple Android launcher with clean UI and grayscale app icons, used daily by me. Implemented app listing, search, and fast launching with smooth Flutter performance.",
+    link: "https://github.com/Deepaksaini00/deep-launcher",
+    image: currency,
+    tech: ["Flutter", "Android", "Dart"],
+  },
+
   {
     title: "ToDo List",
     description:
@@ -39,14 +50,7 @@ const projects: Project[] = [
     image: todo,
     tech: ["HTML", "CSS", "Python", "Flask"],
   },
-  {
-    title: "Rock Paper Scissor Game",
-    description:
-      "A browser-based game using vanilla JavaScript. Includes move logic, score tracking, basic animations, and a responsive UI for all screen sizes.",
-    link: "https://github.com/deepak-nkit/RockPaperScissor-game",
-    image: rock,
-    tech: ["HTML", "CSS", "JavaScript"],
-  },
+
 ];
 
 const Projects: React.FC = () => {

@@ -10,7 +10,7 @@ const SocialLinks: React.FC = () => {
       </a>
 
       <a
-        href="https://github.com/deepak-nkit/"
+        href="https://github.com/Deepaksaini00/"
         target="_blank"
         rel="noreferrer"
       >
