@@ -3,8 +3,9 @@ import { TfiArrowTopRight } from "react-icons/tfi";
 import { HiOutlineArrowRight } from "react-icons/hi";
 import currency from "../assets/currency.png";
 import friend from "../assets/friend.png";
-import rock from "../assets/rock.png";
 import todo from "../assets/todo.png";
+import pass from "../assets/pass.png";
+import launcher from "../assets/launcher.jpg";
 
 type Project = {
   title: string;
@@ -29,7 +30,7 @@ const projects: Project[] = [
     description:
       "Built a command-line password manager to securely store and manage user credentials using a master password.Implemented AES encryption and key derivation to ensure strong data protection.",
     link: "https://github.com/Deepaksaini00/Password-Manager",
-    image: currency,
+    image: pass,
     tech: ["Python", "SQLite", "AES Encryption", "PBKDF2"],
   },
 
@@ -38,7 +39,7 @@ const projects: Project[] = [
     description:
       "Built a simple Android launcher with clean UI and grayscale app icons, used daily by me. Implemented app listing, search, and fast launching with smooth Flutter performance.",
     link: "https://github.com/Deepaksaini00/deep-launcher",
-    image: currency,
+    image: launcher,
     tech: ["Flutter", "Android", "Dart"],
   },
 
